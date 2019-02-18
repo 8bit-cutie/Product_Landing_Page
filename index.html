@@ -3,8 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <title>Product Landing Page</title>
+    <style>
+        body {
+            background-color: gainsboro;
+        }
+
+        #nav {
+            position: fixed;
+            background-color: gainsboro;
+            width: 100%;
+            top: 0;
+        }
+
+        #logo {
+            height: 45px;
+            float: left;
+
+        }
+
+
+        #nav-bar {
+            text-align: right;
+            margin-right: 30px;
+            padding-top: 15px;
+
+        }
+
+        #head-info {
+            text-align: center;
+            display: inline-block;
+            margin-top: 45px;
+            /*margin-left: 30%;*/
+            width: 100%;
+        }
+
+        #submit {
+            background-color: navajowhite;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+    </style>
 </head>
 <body>
+<div id="nav">
+<header id="header">
+    <img id="logo" src="https://www.bleepstatic.com/images/news/deals/logos/nordvpn/nord-vpn-logo.png" alt="Nord vpn logo">
 
+
+        <nav id="nav-bar">
+            <a href="" class="nav-link">Features</a>
+            <a href="" class="nav-link">How it Works</a>
+            <a href="" class="nav-link">Pricing</a>
+        </nav>
+
+</header>
+</div>
+<main>
+    <div id="head-info">
+        <h1>The best available VPN</h1>
+        <form>
+            <label for="email">
+                <input type="email" id="email" placeholder="Enter your email" required><br>
+                <input type="submit" id="submit" value="Get Started">
+            </label>
+        </form>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <img src="http://cdn.rawgit.com/okhoshi/chocolatey-packages/master/openvpn/icon.png" alt="VPN lock logo">
+                <h3>Stay secure online</h3>
+                <p>Cybersecurity may seem very complex, but NordVPN makes it as easy as it gets.
+                    <br>Cutting-edge technologies shield your Internet activity from hackers and malware,
+                    <br>protect you on public Wi-Fi networks, and even block annoying ads.</p>
+            </li>
+            <li>
+                <img src="https://static.apkupdate.com/images/cover/com.appsverse.vpn.png" alt="VPN Security logo">
+                <h3>Your data is always private</h3>
+                <p>Real Internet privacy is just a click away.
+                    <br>NordVPN protects your IP address and makes sure that no one else can see which
+                    <br>websites you visit or what files you download.</p>
+            </li>
+            <li>
+                <img src="https://cdn0.iconfinder.com/data/icons/real-estate-4/256/Consultant-256.png" alt="VPN customer service logo">
+                <h3>Get assistance 24/7</h3>
+                <p>Our award-winning customer service agents are ready to help you all day, every day.
+                    <br>Get in touch with them directly, or find the answers you’re looking for in our Help Center.</p>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <iframe src="https://www.youtube.com/embed/ko-Z15bA__o" allowfullscreen></iframe>
+    </div>
+    <div>
+        <section>
+            <h4>1 month plan</h4>
+            <p>$11.95 per month<br>
+                Save 0%</p>
+        </section>
+        <section>
+            <h4>1 year plan</h4>
+            <p>$6.99 per month<br>
+                Save 41%</p>
+        </section>
+        <section>
+            <h4>2 year plan</h4>
+            <p>$3.99 per month<br>
+                Save 66% </p>
+        </section>
+
+    </div>
+    <footer>Copyright Material</footer>
+</main>
 </body>
 </html>
