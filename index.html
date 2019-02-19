@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <title>Product Landing Page</title>
     <style>
         body {
@@ -15,7 +16,7 @@
             top: 0;
         }
 
-        #logo {
+        #header-img {
             height: 45px;
             float: left;
 
@@ -33,7 +34,6 @@
             text-align: center;
             display: inline-block;
             margin-top: 45px;
-            /*margin-left: 30%;*/
             width: 100%;
         }
 
@@ -43,11 +43,10 @@
             margin-top: 10px;
         }
         ul {
-            /*margin-top: 50px;*/
+
             list-style-type: none;
         }
         .list-item {
-            /*display: inline-block;*/
             margin-left: 20%;
         }
         .list-image {
@@ -58,29 +57,26 @@
             padding-left: 20px;
             padding-top: 15px;
         }
-        #video {
+        #video-div {
             position: relative;
             text-align: center;
             margin-top: 5%;
             width: 100%;
         }
-        #video-content {
+        #video {
             height: 15em;
             width: 30em;
 
         }
+
+
         #row {
-            display: table;
-            clear: both;
-            align-content: center;
-            width: 100%;
-            margin-left: 24%;
+            display: flex;
+            justify-content: center;
             margin-top: 40px;
         }
-
         .column {
             text-align: center;
-            display: inline-block;
             width: 15%;
             padding: 10px;
         }
@@ -88,9 +84,35 @@
         .card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             padding: 16px;
-            text-align: center;
             background-color: ghostwhite;
 
+        }
+        footer {
+            background-color: lightblue;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+          font-size: 20px;
+        }
+        @media screen and (max-width: 300px) {
+            #row {
+                font-size:10px;
+                margin-top: 40px;
+
+            }
+            .column {
+                text-align: center;
+                width: 100%;
+            }
+            #video-div {
+                margin-top: 5%;
+                width: 100%;
+            }
+            #video {
+                height: 15%;
+                width: 80%;
+
+            }
         }
 
     </style>
@@ -98,7 +120,7 @@
 <body>
 <div id="nav">
 <header id="header">
-    <img id="logo" src="https://www.bleepstatic.com/images/news/deals/logos/nordvpn/nord-vpn-logo.png" alt="Nord vpn logo">
+    <img id="header-img" src="https://www.bleepstatic.com/images/news/deals/logos/nordvpn/nord-vpn-logo.png" alt="Nord vpn logo">
         <nav id="nav-bar">
             <a href="#features-info" class="nav-link">Features</a>
             <a href="#video" class="nav-link">How it Works</a>
@@ -110,11 +132,12 @@
 <main>
     <div id="head-info">
         <h1>The best available VPN</h1>
-        <form>
-            <label for="email">
-                <input type="email" id="email" placeholder="Enter your email" required><br>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <!--<label for="email">-->
+                <input type="email" id="email" placeholder="Enter your email" name="email" required><br>
                 <input type="submit" id="submit" value="Get Started">
-            </label>
+
+            <!--</label>-->
         </form>
     </div>
     <div id="features-info">
@@ -154,8 +177,8 @@
             </div>
         </ul>
     </div>
-    <div id="video">
-        <iframe src="https://www.youtube.com/embed/ko-Z15bA__o"  id="video-content" allowfullscreen></iframe>
+    <div id="video-div">
+        <iframe src="https://www.youtube.com/embed/ko-Z15bA__o" id="video" allowfullscreen></iframe>
     </div>
     <section id="row">
         <div class="column">
