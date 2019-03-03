@@ -2,31 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Arima Madurai' rel='stylesheet'>
     <title>Product Landing Page</title>
     <style>
         body {
             background-color: gainsboro;
+            font-family: 'Arima Madurai', serif;
         }
 
         #nav {
             position: fixed;
+            z-index:2;
             background-color: gainsboro;
             width: 100%;
             top: 0;
+            font-size: 25px;
         }
 
         #header-img {
-            height: 45px;
+            height: 2.5em;
+            margin-left: 10px;
             float: left;
-
         }
-
 
         #nav-bar {
             text-align: right;
-            margin-right: 30px;
+            margin-right: 40px;
             padding-top: 15px;
-
+        }
+        a {
+            text-decoration: none;
+            padding-right: 50px;
+            color: #000;
+        }
+        a:hover {
+            color: white;
         }
 
         #head-info {
@@ -34,27 +44,45 @@
             display: inline-block;
             margin-top: 45px;
             width: 100%;
+
+        }
+        h1 {
+            font-size: 50px;
+        }
+        #email {
+            height: 2em;
+            width: 15em;
+            font-size: 13px;
         }
 
         #submit {
+            font-size: 12px;
+            font-weight: bold;
             background-color: navajowhite;
             align-items: center;
             margin-top: 10px;
+            height: 3.5em;
+            width: 7em;
         }
         ul {
-
             list-style-type: none;
+        }
+        h3 {
+            font-size: 30px;
+            font-weight: 900;
         }
         .list-item {
             margin-left: 20%;
+            font-size: 20px;
         }
         .list-image {
-            height: 70px;
+            height: 4.5em;
         }
         .list-content {
             display: inline-block;
             padding-left: 20px;
             padding-top: 15px;
+            font-weight: 100;
         }
         #video-div {
             position: relative;
@@ -63,35 +91,36 @@
             width: 100%;
         }
         #video {
-            height: 15em;
-            width: 30em;
-
+            height: 25em;
+            width: 50em;
         }
-
 
         #row {
             display: flex;
             justify-content: center;
-            margin-top: 40px;
+            margin-top: 9em;
         }
         .column {
             text-align: center;
-            width: 15%;
-            padding: 10px;
+            width: 17%;
+            padding: 30px;
         }
 
         .card {
+            font-size: 25px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             padding: 16px;
             background-color: ghostwhite;
+            margin-bottom: 5em;
 
         }
         footer {
             background-color: lightblue;
             text-align: center;
             margin-top: 20px;
-            padding: 10px;
+            padding-top: 20px;
           font-size: 20px;
+            height: 50px;
         }
         @media screen and (max-width: 300px) {
             #row {
